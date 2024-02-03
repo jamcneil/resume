@@ -1,0 +1,222 @@
+{
+  "basics": {
+    "name": "Judy McNeil",
+    "label": "Sr. Program Manager",
+    "email": "judy.is@live.com",
+    "summary": "Dedicated program manager with a strong background in engineering and teaching, currently leading initiatives at Microsoft to create technical learning content. Leveraging hands-on engineering experience, I navigate complex projects with precision. My teaching background enhances communication skills, ensuring the creation of engaging and accessible content. Committed to staying current with industry trends, I collaborate effectively with clients, making informed decisions to drive programs towards cutting-edge solutions.",
+    "location": {
+      "postalCode": "85005",
+      "city": "Phoenix",
+      "countryCode": "US",
+      "region": "Arizona"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "Judy McNeil",
+        "url": "www.linkedin.com/in/judy-mcneil-program-manager"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Carvana",
+      "name": "Carvana",
+      "position": "Application Security Engineer",
+      "website": "https://carvana.com/",
+      "startDate": "2023-05-01",
+      "endDate": null,
+      "summary": "Starting as the first Application Security Engineer at the company, responsible for building the application security team and program at Carvana.",
+      "highlights": [
+        "Created a Security Champion program that includes designing and running secure code training for engineers in a quarter long cohort.",
+        "Built a subdomain takeover scanner which successfully detected over 50 vulnerable subdomains since it's launch.",
+        "Implemented security tooling to perform SAST, SCA, and Secret Scanning on build pipelines leveraging Security Champions.",
+        "Built automation around the security tools that automatically provisions access to Security Champions that complete the cohort.",
+        "Manage the bug bounty program, keeping the brief up to date and replicating reports as necessary."
+      ]
+    },
+    {
+      "company": "Atlassian",
+      "name": "Atlassian",
+      "position": "Application Security Engineer",
+      "website": "https://atlassian.com/",
+      "startDate": "2022-10-01",
+      "endDate": "2023-05-01",
+      "summary": "Worked on an application security team whose focus was applications and plugins in the market ecosystem.",
+      "highlights": [
+        "Upgraded existing scanner to check againt published security standards.",
+        "Worked on the bug bounty program that we maintained for all bug bounty submissions against third party apps and pugins."
+      ]
+    },
+    {
+      "company": "Trilogy Education",
+      "name": "Trilogy Education",
+      "position": "Cyber Security Instructor",
+      "website": "https://trilogy.com/education/",
+      "startDate": "2021-08-01",
+      "endDate": "2022-03-01",
+      "summary": "Taught an introductory class with around 25 stuents that was 24-weeks long and covered a broad range of information security topics.",
+      "highlights": [
+        "Took learners from zero-to-hero, starting with linux and command-line and ending with a lab in the cloud that contained security monitoring, a vulnerable web application, and cloud security tooling."
+      ]
+    },
+    {
+      "company": "Optiv",
+      "name": "Optiv",
+      "position": "Senior Application Security Consultant",
+      "website": "https://www.optiv.com/",
+      "startDate": "2021-11-01",
+      "endDate": "2022-10-01",
+      "summary": "Worked as a senior application security consultant and primarily performed web application security assessments.",
+      "highlights": [
+        "Created a demonstration of Log4Shell vulnerability shortly after it was discovered and shared this content with the greater team to assist in any consulting work related to Log4Shell",
+        "Worked regularly with a small Credit Union client to help improve their application security by introducing and managing security tooling such as SAST and SCA.",
+        "Performed multiple application security assessments on client applications that included banking and finance, clinical, and social applications",
+        "Worked with a large security networking technology company to improve their secrets-in-source-code scanning and vulnerability management automation."
+      ]
+    },
+    {
+      "company": "Zoom Video Communications",
+      "name": "Zoom Video Communications",
+      "position": "Application Security Engineer",
+      "website": "https://www.zoom.com/",
+      "startDate": "2020-07-01",
+      "endDate": "2021-11-01",
+      "summary": "Primarily focused on the Static Analysis and Security Champion program.",
+      "highlights": [
+        "Implemented Checkmarx as an On-Prem SAST solution by assessing resource needs and building out the infrastructure for the scanners and webserver.",
+        "Created a SAST Program by designing remediation workflows, creating responsibility documentation for Security Champions, and the design and implementation of automation that synced security tool results with our vulnerability management system.",
+        "Created metrics on security champion activity in the SAST platform to measure engagement and remediation efforts."
+      ]
+    },
+    {
+      "company": "Starbucks",
+      "name": "Starbucks",
+      "position": "Information Security Engineer",
+      "website": "https://www.starbucks.com/",
+      "startDate": "2017-08-01",
+      "endDate": "2020-07-01",
+      "summary": "Started by creating a Vulnerability Management team and then moved on to join the Global Applicaiton Security team.",
+      "highlights": [
+        "Built vulnerability management automation that leveraged an internal systems, including Active Directory, to enrich vulnerability data with business context and ownership.",
+        "Implemented and contributed to open-source OWASP Project Defect Dojo to aggrigate application security findings to a single tool.",
+        "Assisted other security teams, such as the Mobile Device Management (MDM) team in creating automation for mass deployments of apps and web-surveys to in-store devices across US and Canada."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "OWASP - Defect Dojo",
+      "position": "Contributor",
+      "website": "https://www.defectdojo.org/",
+      "startDate": "2019-09-01",
+      "endDate": "2020-11-01",
+      "summary": "An Open Source application security tool used for aggrigating, organization, and prioritizing application security findings from assessments and tools.",
+      "highlights": [
+        "Overhauled the JIRA integration",
+        "Improved the formatting of findings imported from Blackduck and Fortify tools."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Arizona State University",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2013-01-01",
+      "endDate": "2018-06-01",
+      "gpa": "3.89"
+    }
+  ],
+    "certificates": [
+    {
+      "name": "OSCP",
+      "date": "2019-09-01",
+      "issuer": "Offensive Security",
+      "url": "https://www.youracclaim.com/badges/fcb58381-f302-453c-9e52-85ac64f294a9/linked_in_profile"
+    },
+    {
+      "name": "GPEN",
+      "date": "2019-12-01",
+      "issuer": "Sans Institute",
+      "url": "https://www.credly.com/badges/3a3e2c60-17d9-48e2-8bd9-f006ef350df7/linked_in_profile"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Assessments",
+      "level": "Expert",
+      "keywords": [
+        "Burp Suite",
+        "OWASP Top 10",
+        "White box testing",
+        "API Security",
+        "Threat Modeling",
+        "Code Review"
+      ]
+    },
+    {
+      "name": "Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Java",
+        "C#",
+        "Automation",
+        "React",
+        "Node", "Express", "Javascript",
+        "Custom Security Scanners",
+        "Azure", "AWS", "GCP",
+        "DevSecOps"
+      ]
+    },
+    {
+      "name": "Security Testing",
+      "level": "Expert",
+      "keywords": [
+        "SAST",
+        "DAST",
+        "SCA/OSS",
+        "Kali Linux",
+        "Nessus",
+        "CI/CD Tools",
+        "Github", 
+        "Gitlab",
+        "Azure Devops",
+        "Threat Modeling",
+        "Code Review"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "Expert",
+      "keywords": [
+        "Teaching",
+        "Leadership",
+        "Security Champions"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Video Games",
+      "keywords": [
+        "FromSoft", "PS5", "Custom PC"
+      ]
+    },
+    {
+      "name": "Playing Music",
+      "keywords": [
+        "Guitar"
+      ]
+    },
+    {
+      "name": "Reading",
+      "keywords": [
+        "Fiction", "Fantasy", "Sci-fi"
+      ]
+    }
+  ],
+  "references": [
+  ]
+}

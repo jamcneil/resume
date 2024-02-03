@@ -1,0 +1,792 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Judy McNeil</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #386083;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #386083;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #386083;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Judy McNeil</h1>
+            <h2>Sr. Program Manager</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
+    </header>
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
+            </div>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text"> Phoenix Arizona 85005 US</h6>
+                </div>
+        
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:judy.is@live.com" target="_blank">
+                                judy.is@live.com
+                            </a>
+                        </h6>
+                </div>
+        
+        
+        
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="www.linkedin.com/in/judy-mcneil-program-manager" target="_blank">
+                                                Judy McNeil
+                                            </a>
+                                        </h6>
+                                </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Web Assessments</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Expert</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Burp Suite</h6>
+                                    <h6 class="main-skill skill">OWASP Top 10</h6>
+                                    <h6 class="main-skill skill">White box testing</h6>
+                                    <h6 class="main-skill skill">API Security</h6>
+                                    <h6 class="main-skill skill">Threat Modeling</h6>
+                                    <h6 class="main-skill skill">Code Review</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Development</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Intermediate</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Python</h6>
+                                    <h6 class="main-skill skill">Java</h6>
+                                    <h6 class="main-skill skill">C#</h6>
+                                    <h6 class="main-skill skill">Automation</h6>
+                                    <h6 class="main-skill skill">React</h6>
+                                    <h6 class="main-skill skill">Node</h6>
+                                    <h6 class="main-skill skill">Express</h6>
+                                    <h6 class="main-skill skill">Javascript</h6>
+                                    <h6 class="main-skill skill">Custom Security Scanners</h6>
+                                    <h6 class="main-skill skill">Azure</h6>
+                                    <h6 class="main-skill skill">AWS</h6>
+                                    <h6 class="main-skill skill">GCP</h6>
+                                    <h6 class="main-skill skill">DevSecOps</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Security Testing</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Expert</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">SAST</h6>
+                                    <h6 class="main-skill skill">DAST</h6>
+                                    <h6 class="main-skill skill">SCA/OSS</h6>
+                                    <h6 class="main-skill skill">Kali Linux</h6>
+                                    <h6 class="main-skill skill">Nessus</h6>
+                                    <h6 class="main-skill skill">CI/CD Tools</h6>
+                                    <h6 class="main-skill skill">Github</h6>
+                                    <h6 class="main-skill skill">Gitlab</h6>
+                                    <h6 class="main-skill skill">Azure Devops</h6>
+                                    <h6 class="main-skill skill">Threat Modeling</h6>
+                                    <h6 class="main-skill skill">Code Review</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Soft Skills</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Expert</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Teaching</h6>
+                                    <h6 class="main-skill skill">Leadership</h6>
+                                    <h6 class="main-skill skill">Security Champions</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Video Games</h4>
+                            <ul class="minimal">
+                                    <li>FromSoft</li>
+                                    <li>PS5</li>
+                                    <li>Custom PC</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Playing Music</h4>
+                            <ul class="minimal">
+                                    <li>Guitar</li>
+                            </ul>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Reading</h4>
+                            <ul class="minimal">
+                                    <li>Fiction</li>
+                                    <li>Fantasy</li>
+                                    <li>Sci-fi</li>
+                            </ul>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Dedicated program manager with a strong background in engineering and teaching, currently leading initiatives at Microsoft to create technical learning content. Leveraging hands-on engineering experience, I navigate complex projects with precision. My teaching background enhances communication skills, ensuring the creation of engaging and accessible content. Committed to staying current with industry trends, I collaborate effectively with clients, making informed decisions to drive programs towards cutting-edge solutions.
+                    </p>
+                </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Arizona State University
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">01/2013</span>
+                    <span class="endDate"> - 06/2018</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor, Computer Science</h4>
+        
+                <h5>3.89</h5>
+                      </section>
+        </div>
+        <div class="container certificates-container">
+            <div class="title">
+            <h3>Certifications</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            OSCP
+                    </h3>
+                    <h5 class="italic pull-right">
+                            09/2019
+                    </h5>
+                </div>
+        
+                <h4>Offensive Security</h4>
+                
+            </section>
+        
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            GPEN
+                    </h3>
+                    <h5 class="italic pull-right">
+                            12/2019
+                    </h5>
+                </div>
+        
+                <h4>Sans Institute</h4>
+                
+            </section>
+        </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://carvana.com/" target="_blank">
+                                    Carvana
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">05/2023</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Application Security Engineer</h4>
+        
+        
+                    <p class="summary">Starting as the first Application Security Engineer at the company, responsible for building the application security team and program at Carvana.</p>
+        
+                    <ul>
+                        <li>Created a Security Champion program that includes designing and running secure code training for engineers in a quarter long cohort.</li>
+                        <li>Built a subdomain takeover scanner which successfully detected over 50 vulnerable subdomains since it&#x27;s launch.</li>
+                        <li>Implemented security tooling to perform SAST, SCA, and Secret Scanning on build pipelines leveraging Security Champions.</li>
+                        <li>Built automation around the security tools that automatically provisions access to Security Champions that complete the cohort.</li>
+                        <li>Manage the bug bounty program, keeping the brief up to date and replicating reports as necessary.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://atlassian.com/" target="_blank">
+                                    Atlassian
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">10/2022</span>
+                                <span class="endDate"> - 05/2023</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Application Security Engineer</h4>
+        
+        
+                    <p class="summary">Worked on an application security team whose focus was applications and plugins in the market ecosystem.</p>
+        
+                    <ul>
+                        <li>Upgraded existing scanner to check againt published security standards.</li>
+                        <li>Worked on the bug bounty program that we maintained for all bug bounty submissions against third party apps and pugins.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://trilogy.com/education/" target="_blank">
+                                    Trilogy Education
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">08/2021</span>
+                                <span class="endDate"> - 03/2022</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Cyber Security Instructor</h4>
+        
+        
+                    <p class="summary">Taught an introductory class with around 25 stuents that was 24-weeks long and covered a broad range of information security topics.</p>
+        
+                    <ul>
+                        <li>Took learners from zero-to-hero, starting with linux and command-line and ending with a lab in the cloud that contained security monitoring, a vulnerable web application, and cloud security tooling.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.optiv.com/" target="_blank">
+                                    Optiv
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">11/2021</span>
+                                <span class="endDate"> - 10/2022</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Senior Application Security Consultant</h4>
+        
+        
+                    <p class="summary">Worked as a senior application security consultant and primarily performed web application security assessments.</p>
+        
+                    <ul>
+                        <li>Created a demonstration of Log4Shell vulnerability shortly after it was discovered and shared this content with the greater team to assist in any consulting work related to Log4Shell</li>
+                        <li>Worked regularly with a small Credit Union client to help improve their application security by introducing and managing security tooling such as SAST and SCA.</li>
+                        <li>Performed multiple application security assessments on client applications that included banking and finance, clinical, and social applications</li>
+                        <li>Worked with a large security networking technology company to improve their secrets-in-source-code scanning and vulnerability management automation.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.zoom.com/" target="_blank">
+                                    Zoom Video Communications
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">07/2020</span>
+                                <span class="endDate"> - 11/2021</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Application Security Engineer</h4>
+        
+        
+                    <p class="summary">Primarily focused on the Static Analysis and Security Champion program.</p>
+        
+                    <ul>
+                        <li>Implemented Checkmarx as an On-Prem SAST solution by assessing resource needs and building out the infrastructure for the scanners and webserver.</li>
+                        <li>Created a SAST Program by designing remediation workflows, creating responsibility documentation for Security Champions, and the design and implementation of automation that synced security tool results with our vulnerability management system.</li>
+                        <li>Created metrics on security champion activity in the SAST platform to measure engagement and remediation efforts.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                                <a href="https://www.starbucks.com/" target="_blank">
+                                    Starbucks
+                                </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                                <span class="startDate">08/2017</span>
+                                <span class="endDate"> - 07/2020</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Information Security Engineer</h4>
+        
+        
+                    <p class="summary">Started by creating a Vulnerability Management team and then moved on to join the Global Applicaiton Security team.</p>
+        
+                    <ul>
+                        <li>Built vulnerability management automation that leveraged an internal systems, including Active Directory, to enrich vulnerability data with business context and ownership.</li>
+                        <li>Implemented and contributed to open-source OWASP Project Defect Dojo to aggrigate application security findings to a single tool.</li>
+                        <li>Assisted other security teams, such as the Mobile Device Management (MDM) team in creating automation for mass deployments of apps and web-surveys to in-store devices across US and Canada.</li>
+                    </ul>
+                </section>
+        </div>
+        <div class="container volunteer-container">
+            <div class="title">
+                <h3>Volunteer</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            <a href="https://www.defectdojo.org/" target="_blank">
+                                OWASP - Defect Dojo
+                                    <span class="sublink">∙ <a href="https://www.defectdojo.org/" target="_blank" class="sublink">https://www.defectdojo.org/</a></span>
+                            </a>
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">09/2019</span>
+                            <span class="endDate"> - 11/2020</span>
+                    </h5>
+                </div>
+                <h5>Contributor</h5>
+        
+                <p class="summary">An Open Source application security tool used for aggrigating, organization, and prioritizing application security findings from assessments and tools.</p>
+        
+                <ul>
+                    <li>Overhauled the JIRA integration</li>
+                    <li>Improved the formatting of findings imported from Blackduck and Fortify tools.</li>
+                </ul>
+            </section>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
